@@ -46,3 +46,12 @@ header a {
   font-weight: 600;
   color: var(--black);
 }
+section .container {
+  padding: 0;
+  width: 100%;
+}
+section .image {
+  width: 70%;
+  height: 100vh;
+  background-image: url(../images/bg.webp);
+}
