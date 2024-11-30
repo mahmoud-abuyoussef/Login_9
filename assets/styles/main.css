@@ -47,11 +47,32 @@ header a {
   color: var(--black);
 }
 section .container {
-  padding: 0;
+  display: flex;
+  align-items: center;
   width: 100%;
+  padding: 0;
 }
 section .image {
   width: 70%;
   height: 100vh;
   background-image: url(../images/bg.webp);
+  background-repeat: no-repeat;
+}
+section .signin-container {
+  width: 30%;
+}
+section .signin-container h1 {
+  margin-bottom: 22px;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--black);
+}
+section .signin-container p {
+  margin-bottom: 52px;
+  font-size: 16px;
+  font-weight: 400;
+}
+section .signin-container p a {
+  font-weight: 600;
+  color: var(--coral-red);
 }
