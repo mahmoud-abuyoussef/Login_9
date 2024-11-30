@@ -7,6 +7,10 @@
   --black: black;
   --white: white;
   --coral-red: #ff432a;
+  --philippine-silver: #b5b5b5;
+}
+body {
+  font-family: "Poppins", serif;
 }
 a {
   text-decoration: none;
@@ -29,4 +33,16 @@ a {
   .container {
     width: 1170px;
   }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 31px 0;
+}
+header a {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
 }
