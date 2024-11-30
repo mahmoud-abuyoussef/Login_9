@@ -53,13 +53,22 @@ section .container {
   padding: 0;
 }
 section .image {
-  width: 70%;
+  width: 65%;
   height: 100vh;
   background-image: url(../images/bg.webp);
   background-repeat: no-repeat;
 }
+@media (max-width: 991px) {
+  header {
+    background-color: var(--white);
+  }
+  section .image {
+    display: none;
+  }
+}
 section .signin-container {
-  width: 30%;
+  flex-grow: 1;
+  padding: 20px;
 }
 section .signin-container h1 {
   margin-bottom: 22px;
@@ -75,4 +84,68 @@ section .signin-container p {
 section .signin-container p a {
   font-weight: 600;
   color: var(--coral-red);
+}
+section .signin-container form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+section .signin-container form .input-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  margin-bottom: 39px;
+  border-bottom: 3px solid var(--coral-red);
+}
+section .signin-container form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+section .signin-container form .input-container input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+}
+section .signin-container form .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .signin-container form .options .remember-me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section .signin-container form .options .remember-me label,
+section .signin-container form .options .remember-me input {
+  margin: 0;
+  width: fit-content;
+  cursor: pointer;
+}
+section .signin-container form .options a {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black);
+}
+section .signin-container form input[type="submit"] {
+  padding: 15px;
+  margin-top: 20px;
+  color: var(--white);
+  background-color: var(--coral-red);
+  border-radius: 32px;
+  cursor: pointer;
+}
+section .login-with {
+  margin-top: 10px;
+  text-align: center;
+}
+section .login-with p {
+  margin: 20px 0;
+}
+section .login-with a {
+  margin: 0 10px;
 }
